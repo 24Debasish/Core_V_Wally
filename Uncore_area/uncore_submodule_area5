@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : msrv_soc_gpio_apbwrapper
+Version: T-2022.03-SP4
+Date   : Fri Jul 24 11:30:50 2026
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_base_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_tt0p65v25c.db)
+    saed14hvt_base_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_HVT/liberty/nldm/base/saed14hvt_base_tt0p65v25c.db)
+    saed14hvt_cg_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_HVT/liberty/nldm/cg/saed14hvt_cg_tt0p65v25c.db)
+
+Number of ports:                          936
+Number of nets:                          1629
+Number of cells:                          992
+Number of combinational cells:            764
+Number of sequential cells:               219
+Number of macros/black boxes:               0
+Number of buf/inv:                        230
+Number of references:                       2
+
+Combinational area:                207.569998
+Buf/Inv area:                       56.831999
+Noncombinational area:             241.580403
+Macro/Black Box area:                0.000000
+Net Interconnect area:             934.175989
+
+Total cell area:                   449.150401
+Total area:                       1383.326390
+1

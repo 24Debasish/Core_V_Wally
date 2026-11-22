@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : msrv_soc_ahbapbbridgewrapper
+Version: T-2022.03-SP4
+Date   : Thu Jul 23 20:53:46 2026
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_base_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_tt0p65v25c.db)
+    saed14lvt_cg_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_LVT/liberty/nldm/cg/saed14lvt_cg_tt0p65v25c.db)
+
+Number of ports:                         2425
+Number of nets:                          3089
+Number of cells:                          879
+Number of combinational cells:            527
+Number of sequential cells:               344
+Number of macros/black boxes:               0
+Number of buf/inv:                         99
+Number of references:                       3
+
+Combinational area:                190.742400
+Buf/Inv area:                       40.714800
+Noncombinational area:             398.845209
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1172.594250
+
+Total cell area:                   589.587609
+Total area:                       1762.181859
+1

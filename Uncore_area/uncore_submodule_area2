@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : msrv_soc_adrdecswrapper
+Version: T-2022.03-SP4
+Date   : Sat Aug  8 12:30:29 2026
+****************************************
+
+Library(s) Used:
+
+    saed14hvt_base_ss0p585v125c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_HVT/liberty/nldm/base/saed14hvt_base_ss0p585v125c.db)
+    saed14rvt_base_ss0p585v125c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p585v125c.db)
+
+Number of ports:                         1564
+Number of nets:                           623
+Number of cells:                          146
+Number of combinational cells:            137
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:                 52.436400
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:              99.829707
+
+Total cell area:                    52.436400
+Total area:                        152.266107
+1

@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : area
+Design : msrv_soc_spi_apbwrapper
+Version: T-2022.03-SP4
+Date   : Sun Aug  9 13:32:39 2026
+****************************************
+
+Library(s) Used:
+
+    saed14hvt_base_ss0p585v125c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_HVT/liberty/nldm/base/saed14hvt_base_ss0p585v125c.db)
+    saed14rvt_base_ss0p585v125c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p585v125c.db)
+    gtech (File: /home/cad/eda/SYNOPSYS/Design_compiler/syn/T-2022.03-SP4/libraries/syn/gtech.db)
+    saed14hvt_cg_ss0p585v125c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_HVT/liberty/nldm/cg/saed14hvt_cg_ss0p585v125c.db)
+
+Number of ports:                          610
+Number of nets:                          1691
+Number of cells:                         1321
+Number of combinational cells:            957
+Number of sequential cells:               328
+Number of macros/black boxes:               0
+Number of buf/inv:                        179
+Number of references:                       5
+
+Combinational area:                270.884399
+Buf/Inv area:                       31.790399
+Noncombinational area:             264.535203
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   535.419602
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
