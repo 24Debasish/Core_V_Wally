@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : msrv_soc_privilegedwrapper
+Version: T-2022.03-SP4
+Date   : Fri Jul 24 12:42:10 2026
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_base_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_tt0p65v25c.db)
+    saed14lvt_cg_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_LVT/liberty/nldm/cg/saed14lvt_cg_tt0p65v25c.db)
+
+Number of ports:                        18646
+Number of nets:                         35141
+Number of cells:                        19732
+Number of combinational cells:          15603
+Number of sequential cells:              3953
+Number of macros/black boxes:               0
+Number of buf/inv:                       3589
+Number of references:                       2
+
+Combinational area:               6525.290349
+Buf/Inv area:                     1472.836780
+Noncombinational area:            4423.438825
+Macro/Black Box area:                0.000000
+Net Interconnect area:           20136.044212
+
+Total cell area:                 10948.729174
+Total area:                      31084.773387
+1
