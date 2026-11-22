@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : msrv_soc_lsuwrapper
+Version: T-2022.03-SP4
+Date   : Thu Jul 23 23:15:17 2026
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_base_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_tt0p65v25c.db)
+    saed14lvt_cg_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_LVT/liberty/nldm/cg/saed14lvt_cg_tt0p65v25c.db)
+    saed14sram_ss0p72vm40c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_SRAM/liberty/nldm/saed14sram_ss0p72vm40c.db)
+
+Number of ports:                        66223
+Number of nets:                        109920
+Number of cells:                        49572
+Number of combinational cells:          43475
+Number of sequential cells:              5442
+Number of macros/black boxes:              20
+Number of buf/inv:                      10276
+Number of references:                       2
+
+Combinational area:              19738.375116
+Buf/Inv area:                     4585.409978
+Noncombinational area:            6000.082871
+Macro/Black Box area:          1345527.187500
+Net Interconnect area:          118510.726344
+
+Total cell area:               1371265.645487
+Total area:                    1489776.371831
+1

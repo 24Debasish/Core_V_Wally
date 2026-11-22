@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : msrv_soc_fpuwrapper
+Version: T-2022.03-SP4
+Date   : Thu Jul 23 22:21:24 2026
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_base_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_tt0p65v25c.db)
+    saed14lvt_cg_tt0p65v25c (File: /home1/SAED14_EDK/SAED14_EDK/SAED14nm_EDK_STD_LVT/liberty/nldm/cg/saed14lvt_cg_tt0p65v25c.db)
+
+Number of ports:                        35501
+Number of nets:                         80913
+Number of cells:                        49346
+Number of combinational cells:          45514
+Number of sequential cells:              3592
+Number of macros/black boxes:               0
+Number of buf/inv:                      11143
+Number of references:                       3
+
+Combinational area:              18361.309020
+Buf/Inv area:                     3513.727163
+Noncombinational area:            4493.502040
+Macro/Black Box area:                0.000000
+Net Interconnect area:           44662.732244
+
+Total cell area:                 22854.811060
+Total area:                      67517.543304
+1
