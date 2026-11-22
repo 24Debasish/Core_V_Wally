@@ -1,0 +1,52 @@
+#load_upf  ~/CVW_MAIN/msrv_soc_lsuwrapper/scripts/msrv_soc_lsuwrapper.upf
+#load_upf  /home1/WBPD20/GDebasisH/Final_Projectbpd33/Synth/msrv_soc_pipelinedcore/msrv_soc_pipelinedcore/upf/msrv_soc_lsuwrapper.upf -scope lsu_synth
+#load_upf  /home/Harini_MTS/CVW_MAIN/msrv_soc_fpuwrapper/scripts/msrv_soc_fpuwrapper.upf 
+#load_upf  /home1/WBPD20/GDebasisH/Final_Projectbpd33/Synth/msrv_soc_pipelinedcore/msrv_soc_pipelinedcore/upf/msrv_soc_fpuwrapper.upf -scope fpu_synth
+#load_upf  /home/Harini_MTS/CVW_MAIN/msrv_soc_mduwrapper/scripts/msrv_soc_mduwrapper.upf 
+#load_upf  /home1/WBPD20/GDebasisH/Final_Projectbpd33/Synth/msrv_soc_pipelinedcore/msrv_soc_pipelinedcore/upf/msrv_soc_mduwrapper.upf -scope mdu_synth
+#load_upf  /home/Harini_MTS/CVW_MAIN/msrv_soc_ebuwrapper/scripts/msrv_soc_ebuwrapper.upf 
+#load_upf  /home1/WBPD20/GDebasisH/Final_Projectbpd33/Synth/msrv_soc_pipelinedcore/msrv_soc_pipelinedcore/upf/msrv_soc_ebuwrapper.upf -scope ebu_synth
+#load_upf  /home/Harini_MTS/CVW_MAIN/msrv_soc_privilegedwrapper/scripts/msrv_soc_privilegedwrapper.upf 
+#load_upf  /home1/WBPD20/GDebasisH/Final_Projectbpd33/Synth/msrv_soc_pipelinedcore/msrv_soc_pipelinedcore/upf/msrv_soc_privilegedwrapper.upf -scope priv_synth
+#load_upf  /home/Harini_MTS/CVW_MAIN/msrv_soc_hazardwrapper/scripts/msrv_soc_hazardwrapper.upf 
+#load_upf  /home1/WBPD20/GDebasisH/Final_Projectbpd33/Synth/msrv_soc_pipelinedcore/msrv_soc_pipelinedcore/upf/msrv_soc_hazardwrapper.upf -scope hzu_synth
+#load_upf  /home/Harini_MTS/CVW_MAIN/msrv_soc_ifuwrapper/scripts/msrv_soc_ifuwrapper.upf 
+#load_upf  /home1/WBPD20/GDebasisH/Final_Projectbpd33/Synth/msrv_soc_pipelinedcore/msrv_soc_pipelinedcore/upf/msrv_soc_ifuwrapper.upf -scope ifu_synth
+#load_upf  /home/Harini_MTS/CVW_MAIN/msrv_soc_ieuwrapper/scripts/msrv_soc_ieuwrapper.upf
+#load_upf  /home1/WBPD20/GDebasisH/Final_Projectbpd33/Synth/msrv_soc_pipelinedcore/msrv_soc_pipelinedcore/upf/msrv_soc_ieuwrapper.upf -scope ieu_synth
+
+
+
+
+
+
+create_power_domain pd_core
+create_supply_port VDD
+create_supply_port VDDM 
+create_supply_port VSS
+create_supply_net VDD -domain pd_core
+create_supply_net VDD -domain pd_core -reuse
+create_supply_net VDDM -domain pd_core
+create_supply_net VDDM -domain pd_core -reuse
+create_supply_net VSS -domain pd_core
+create_supply_net VSS -domain pd_core -reuse
+
+#connect_supply_net VDD -ports {VDD  lsu_synth/VDD ieu_synth/VDD ifu_synth/VDD mdu_synth/VDD priv_synth/VDD hzu_synth/VDD fpu_synth/VDD ebu_synth/VDD}
+
+#connect_supply_net VDDM -ports {VDDM  lsu_synth/VDDM ieu_synth/VDDM ifu_synth/VDDM mdu_synth/VDDM priv_synth/VDDM hzu_synth/VDDM fpu_synth/VDDM ebu_synth/VDDM}
+
+#connect_supply_net VSS -ports {VSS  lsu_synth/VSS ieu_synth/VSS ifu_synth/VSS mdu_synth/VSS priv_synth/VSS hzu_synth/VSS fpu_synth/VSS ebu_synth/VSS}
+
+connect_supply_net VDD -ports VDD
+connect_supply_net VDDM -ports VDDM
+connect_supply_net VSS -ports VSS
+
+
+set_domain_supply_net pd_core -primary_power_net VDDM -primary_ground_net VSS
+
+
+
+set_level_shifter LtoH_sig_to_core -domain pd_core  -applies_to inputs -rule low_to_high -location  self
+set_level_shifter HtoL_sig_from_core -domain pd_core -applies_to outputs -rule high_to_low -location self
+
+set_related_supply_net -power VDD -ground VSS

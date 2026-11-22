@@ -1,0 +1,22 @@
+
+create_power_domain pd_io -include_scope 
+
+create_supply_port VDD 
+create_supply_port VDDH -domain pd_io -direction in  
+create_supply_port VSS  -domain pd_io -direction in  
+
+create_supply_net VDD            
+create_supply_net VDD -domain pd_io -reuse
+
+create_supply_net VDDH 
+create_supply_net VDDH -domain pd_io -reuse
+create_supply_net VSS            
+create_supply_net VSS  -domain pd_io -reuse
+
+connect_supply_net VDD -ports VDD	
+connect_supply_net VDDH -ports VDDH
+connect_supply_net VSS  -ports VSS
+
+set_domain_supply_net pd_io -primary_power_net VDD -primary_ground_net VSS
+
+set_related_supply_net -power VDDH -ground VSS
