@@ -101,24 +101,12 @@ Its primary responsibilities include:
 - Integrating the complete SoC design.
 - Managing the overall design hierarchy.
 
-## Topics Covered
 
-- RISC-V and CORE-V fundamentals
-- CORE architecture and SoC bus connectivity
-- AHB, APB, and AHB-to-APB bridging
-- RAM and EEPROM
-- GPIO, UART, and SPI interfaces
-- UPF-based power management
-- Clock specifications and clock periods
-- PVT corners, including LVT and HVT
-- RTL-to-gate-level synthesis
-- Wrapper modules and test access mechanisms
-- Top-level SoC integration
 
 ## Author
 
 **Debasish Ghosh**
 
-- **Email:** your-email@example.com
-- **LinkedIn:** https://www.linkedin.com/in/your-profile/
+- **Email:** your-ghosh2001debasish@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/debasish-ghosh-410537263/
 
